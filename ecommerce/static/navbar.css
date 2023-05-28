@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #48002b;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .navbar-logo {
+    margin-right: 20px;
+  }
+  
+  .navbar-logo img {
+    max-height: 50px;
+  }
+  
+  .navbar-middle {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .navbar-search input[type="text"] {
+    border: none;
+    padding: 5px;
+    width: 200px;
+    font-size: 16px;
+    color: #fff;
+    background-color: transparent;
+  }
+  
+  .navbar-search button[type="submit"] {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .navbar-right ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-right li {
+    margin-right: 20px;
+  }
+  
+  .navbar-right a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-right i {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  
+  /* Favicon styles */
+  
+  .fa-shopping-cart:before {
+    content: "\f07a";
+  }
+  
+  .fa-heart:before {
+    content: "\f004";
+  }
+  
+  .fa-user:before {
+    content: "\f007";
+  }
+
+  .hero {
+    background-image: url("bliss.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-text {
+    text-align: left;
+    max-width: 500px;
+    padding: 0 20px;
+    color: #fff;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #f10f0f;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: #e04807;
+  }
+  

@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% load static%}
+{% block content%}
+<head>
+    <link rel="stylesheet" href="{% static './navbar.css' %}">
+</head>
+<body>
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* General styles */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+img {
+ 
+  height: auto;
+  max-width: 50%;
+  align-content: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.post {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.post h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.post p {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Specific styles for featured post */
+
+.featured-post {
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+
+.featured-post h2 {
+  margin-top: 0;
+}
+
+.featured-post img {
+  width: 50%;
+  margin-right: 20px;
+}
+
+/* Specific styles for latest posts */
+
+.latest-posts {
+  padding: 50px;
+}
+
+.latest-posts h2 {
+  margin-top: 0;
+}
+
+.latest-posts img {
+  width: 30%;
+  margin-right: 20px;
+}
+
+        
+            
+            
+    </style>
+	<main>
+		<section class="featured-post">
+			<h2>Featured Post</h2>
+			<div class="post">
+				<flex>
+				<img src="{% static '/images/Blog/blog0.jpg' %}
+				" alt="Featured Post Image">
+				<h3><a href="#">The Best Makeup Products for Summer</a></h3>
+				<p>Beauty is an enigmatic idea the fact that defies linguistic and cultural bounds, making it challenging to describe.</p>
+			</div>
+		</section></flex>
+		<section class="latest-posts">
+			<h2>Latest Posts</h2>
+			<div class="post">
+				<flex>
+				<img src="{% static '/images/Blog/blog1.jpg' %}
+				" alt="Post Image">
+				<h3><a href="#">Health and Wellness</a></h3>
+				<p>Beauty is an enigmatic idea the fact that defies linguistic and cultural bounds, making it challenging to describe. Individual tastes, experiences, and views shape this subjective ideal, which differs from person to person. Despite its elusiveness, beauty is a pervasive force that permeates every part of our existence, from the physical to the metaphysical, from the natural world to man-made objects.<br>
+					The beauty of nature is undoubtedly the most well-known type of beauty, evoking respect and amazement in people all over the world. Nature's majesty never ceases to amaze and inspire, from the towering mountains to the immense seas, from the intricate designs on a butterfly's wings to the gentle glow of a sunset. It inspires wonder and reverence in us by serving as a reminder of our position in the universe and the interconnectedness of all things.<br>
+					<p>Beauty in the framework of art and aesthetics assumes a more individualized and nuanced shape, representing the various manifestations of human ingenuity and imagination. Art, whether it takes the form of a picture, a sculpture, or a performance, has the ability to arouse feelings and awaken the senses, thereby allowing us to communicate with our innermost selves and the world around us. In art, beauty can be found in the harmony of shape and color, the interaction of light and shade, and the overall emotional impact of the piece.</p>
+					Beauty is, at its core, a profoundly individualized experience that cuts across linguistic and cultural barriers.<br> It is a blessing that each of us possesses, though in varying degrees and manifestations, and it is our duty to cherish and recognize it in both ourselves and others.Because we can produce beauty in our own lives through our own deeds, words, and attitudes, it is not just something we can witness in the world. It is a factor that can change us, make us feel better about ourselves, and motivate us to strive to be our best selves.
+					</p>
+				</flex>
+			</div>
+	
+			<div class="post">
+				<flex>
+				<img src="{% static '/images/Blog/blog2.jpg' %}
+				" alt="Post Image">
+				<h3><a href="#">Skincare Tips:</a></h3>
+				<p>Beauty is an exquisite quality that transcends time and space and captures the spirit of life and brightness. It is a complex idea that affects all facets of our existence, including the tangible and metaphysical realms as well as the natural world and man-made objects. People from all countries and eras are moved by the subtle power of beauty, which captivates the senses and enlivens the spirit.
+
+					An external representation of the energy and well-being that exists within, healthy, radiant skin is a mirror of interior attractiveness. A crucial component of keeping skin healthy and radiant is proper skincare, which nourishes the skin and shields it from the damaging effects of aging and external stresses. Consistently following a skincare regimen that is suited to each individual's skin's requirements and type can help to encourage healthy cell turnover, stop harm, and promote a young radiance.
+					
+					Any cleanliness regimen should start with cleansing, which gets rid of impurities and gets the face ready for additional care. Use a mild cleanser that won't dry out the skin's natural oils or upset the sensitive flora of the skin's surface. The next important stage is moisturizing, which is essential for nourishing and hydrating the face and avoiding dryness and flakiness. After washing and toning, a moisturizer should be applied. The choice should be dependent on the variety of skin.
+					
+					An external representation of the energy and well-being that exists within, healthy, radiant skin is a mirror of interior attractiveness. A crucial component of keeping skin healthy and radiant is proper skincare, which nourishes the skin and shields it from the damaging effects of aging and external stresses. Consistently following a skincare regimen that is suited to each individual's skin's requirements and type can help to encourage healthy cell turnover, stop harm, and promote a young radiance.
+					</p>
+				</flex>
+			</div>
+			<div class="post">
+				<flex>
+				<img src="{% static '/images/Blog/blog3.jpg' %}
+				" alt="Post Image">
+				<h3><a href="#">Makeup Tutorials</a></h3>
+				<p>Beauty is a complex and multifaceted concept that has captivated the human imagination for centuries. It encompasses a vast array of qualities and attributes, from physical attractiveness and symmetry to inner radiance and vitality. Beauty is not limited to one specific aspect of life but rather permeates every sphere, from the natural world to the man-made, from the physical to the metaphysical. It is a quality that inspires awe and admiration, transcending time and space.
+					Makeup tutorials offer a unique opportunity to investigate the changing potential of beauty, offering a venue for artistic expression and individual development. By using makeup to accentuate their inherent beauty and convey their distinct personalities, they enable people to play with various looks and fashions. The viewer will be guided through the process of getting the desired appearance by detailed directions and demonstrations in a decent tutorial.
+					The art for applying cosmetics calls for dexterity, accuracy, and a comprehension of the fundamentals of beauty. A good lesson will assist the observer in determining their skin type, requirements, and the methods and items that are most effective for them. Additionally, it will stress the value of hygiene, promoting healthy, radiant skin as the base for all cosmetics looks.
+					Ultimately, makeup tutorials help people nurture their inner radiance and convey their individual identities through makeup, providing a window into the transformative power of beauty. They give people a place to show their creativity and advance personally by giving them the freedom to try on various looks and discover the ones that work best for them. People can reach their best potential and show the world their distinctive beauty by embracing the craft of makeup application and utilizing the power of beauty.</p>
+				</flex></div>
+		</section>
+
+		<div class="post">
+			<flex>
+			<img src="{% static '/images/Blog/blog.jpg' %}
+			" alt="Post Image">
+			<h3><a href="#">Nailcare Tips</a></h3>
+			<p> Therefore essential, consequently, to adopt a comprehensive approach to nail care that emphasizes cleanliness, nutrition, and protection. Indeed, the development of exquisite and healthy nails is a vital component of one's personal maintenance routine, as it emanates an air of elegance and grace.
+				An essential aspect of manicure care is maintaining meticulous sanitation because it prevents the growth of harmful bacterial and fungus infections that could seriously harm nail health. To this end, it is expected of people to dry their nails and cuticles meticulously after showering or cleaning their hands. Furthermore, it is imperative to stop biting your cuticles because it causes harm and increases your chance of infection.
+				Yet another vital principle of manicure care that should not be disregarded is using the proper instruments and products. To encourage healthy nail development, prevent discoloration and brittleness, and protect oneself from the harmful effects of toxic chemicals, essential tools include a mild nail paint remover, cuticle oil or ointment that moisturizes cuticles, and non-toxic nail polish.
+				Along with the aforementioned techniques, one should consume a healthy diet rich in foods high in biotin, vitamin E, and iron because these nutrients promote the growth of strong, healthy nails that can withstand the stresses of everyday living. When required, seeking expert assistance, such as from a dermatologist or manicure technician, may also be beneficial in identifying and addressing underlying nail health problems.
+				In conclusion, nail care, in all its manifold dimensions, forms a vital component of personal grooming that requires a holistic and comprehensive approach. By adopting practices that prioritize cleanliness, nourishment, and protection, individuals can revel in the splendor of healthy and beautiful nails that radiate an aura of sophistication and poise.
+				</p></flex>
+			</div>
+		<section class="categories">
+			<h2>Categories</h2>
+			<ul>
+				<li><a href="#">Makeup</a></li>
+				<li><a href="#">Skincare</a></li>
+				<li><a href="#">Haircare</a></li>
+				<li><a href="#">Nails</a></li>
+			</ul>
+		</section>
+	</main>
+	
+</body>
+{% endblock %}

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Beauty Product Website</title>
+    <!-- <link rel="stylesheet" href="{% static 'style.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+  </head>
+  <body>
+    <header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+              <a href="#"><img src="{% static 'images/logo.png' %}" alt="Logo"></a>
+            </div>
+            <div class="navbar-middle">
+              <form class="navbar-search">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <div class="navbar-right">
+              <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="product">Products</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="/aboutUs">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+                <li><a href="login">Login</a></li>
+                
+                </ul>
+              
+
+        </div>
+    </nav>
+  </header>
+  {%block content%}
+  {%endblock%}
+
+  <footer>
+    <p>&copy; 2023 Beauty Blog. All Rights Reserved.</p>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{%load static%}
+{%block content%}
+
+<body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+    }
+    
+    nav li {
+      margin-right: 1rem;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+    
+    .product-image {
+      flex-basis: 50%;
+      margin-right: 2rem;
+    }
+    
+    .product-image img {
+      width: 60%;
+    }
+    
+    .product-details {
+      flex-basis: 40%;
+    }
+    
+    .product-details h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .product-details p {
+      margin-bottom: 1rem;
+    }
+    
+    .product-details label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    
+    .product-details input[type=number] {
+      width: 4rem;
+    }
+    
+    .product-details button {
+      display: block;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+    
+    .product-details button:hover {
+      background-color: #555;
+    }
+    
+  </style>
+  <main>
+    <div class="product-image">
+      <img src="{% static '/images/moisturizer.webp'%}" alt="Body Care Product">
+    </div>
+    <div class="product-details">
+      <h1>Body Care Product</h1>
+      <p class="product-price">$19.99</p>
+      <p class="product-description">This moisturizing Body Lotion for women combines two skin-loving ingredients. Aloe Vera with its soothing, hydrating goodness. And Olive Butter with its intense moisturization and skin rejuvenating properties. We've also infused it with our signature Enchanteur Romantic Perfume feminine bouquet of Bulgarian Roses, White Jasmines and Vanilla. The creamy Romantic Hand and Body Lotion is perfect to restore your skin rosy glow.</p>
+      <form>        
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+
+    <div class="product-image">
+      <img src="{% static '/images/mascara.webp'%}" alt="Body Care Product">
+    </div>
+    <div class="product-details">
+      <h1>Maybelline Mascara</h1>
+      <p class="product-price">$10.99</p>
+      <p class="product-description">Mascara by Maybelline New York features superior brush technology and innovative formulas that let you create whatever lash look you set your eyes on. Choose from our long lasting, lengthening or volumizing mascaras to curl, define and boost lash fullness for a natural or dramatic lash look.</p>
+      <form>
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+    
+    <div class="product-image">
+      <img src="{% static '/images/perfume2.jpg'%}" alt="Body Care Product">
+    </div>
+    <div class="product-details">
+      <h1>Victoria Secret's Perfume</h1>
+      <p class="product-price">$17.25</p>
+      <p class="product-description">Victoria's Secret Bare Vanilla Fragrance Mist is a fresh oriental body mist featuring fruit notes, apple blossom and vanilla. Warm, comforting like a second skin.</p>
+      <form>
+        <button type="submit">Add to Cart</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+{%endblock%}

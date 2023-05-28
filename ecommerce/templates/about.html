@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{%load static%}
+{%block content%}
+
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            height: 62vh;
+            margin: auto;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .about-img {
+            float: left;
+            margin-right: 20px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <h1>About Us</h1>
+
+    <div class="container">
+        <img src="{% static '/images/about.jpg'%}" alt="Our team" class="about-img">
+        <p> Welcome to Bliss, the exclusive importer, distributor, and retailer of major American and European cosmetics
+            and skincare brands in Nepal. Our passion for beauty runs deep, and we are dedicated to bringing you the
+            latest and greatest products from around the world. With over twenty authorized foreign beauty brands, we
+            offer a wide range of products including makeup, skincare, masks, sunscreen, perfumes, and makeup
+            accessories.<br><br>At Bliss, our commitment to exceptional customer service is unmatched. Our team is dedicated
+            to helping you find the perfect products to meet your needs and exceed your expectations. We are excited to embark on this
+            journey with you and help you discover your true beauty.Thank you for choosing Bliss as your go-to
+            destination for all your beauty needs. Let's celebrate beauty
+            together!</p>
+    </div>
+
+
+</body>
+{%endblock%}
